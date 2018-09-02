@@ -24,7 +24,6 @@ with tf.Session() as sess:
     print("var2=",var2.eval())
 
 
-
 get_var1 = tf.get_variable("firstvar",[1], initializer=tf.constant_initializer(0.3))
 print ("get_var1:",get_var1.name)
 
