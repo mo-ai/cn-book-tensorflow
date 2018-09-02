@@ -12,6 +12,7 @@ import matplotlib.pyplot as plt
 
 
 plotdata = { "batchsize":[], "loss":[] }
+
 def moving_average(a, w=10):
     if len(a) < w: 
         return a[:]    
@@ -25,8 +26,6 @@ train_Y = 2 * train_X + np.random.randn(*train_X.shape) * 0.3 # y=2x，但是加
 plt.plot(train_X, train_Y, 'ro', label='Original data')
 plt.legend()
 plt.show()
-
-
 
 
 # 创建模型
